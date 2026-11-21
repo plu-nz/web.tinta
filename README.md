@@ -2,8 +2,8 @@
 
 Showcase site for Tinta, the PLUNZ colour palette, live at [tinta.plu.nz](https://tinta.plu.nz).
 
-- **Dark:** Catppuccin Mocha, exact values, with the Darkppuccin backgrounds.
-- **Light:** Catppuccin Latte, exact values, with PLUNZ light backgrounds (#F7F7F9, #FFFFFF).
+- **Dark:** Catppuccin Mocha with Darkppuccin backgrounds; text, overlays and surfaces are neutral grays (same luminance, blue tint removed).
+- **Light:** Catppuccin Latte with PLUNZ light backgrounds (#F7F7F9, #FFFFFF); same neutral grays for text, overlays and surfaces.
 - **Stack:** SolidJS, Vite, pnpm; static assets served by Cloudflare Workers.
 - **Languages:** English, Portuguese, Spanish (device default, `plunz_locale` cookie). Group titles are translated in `src/palette.js`.
 
