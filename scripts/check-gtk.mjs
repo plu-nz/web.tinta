@@ -3,7 +3,7 @@ import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { values } from '../src/palette.js'
 
-const themes = { Tinta: values.dark, 'Tinta-Light': values.light }
+const themes = { 'Tinta-Dark': values.dark, 'Tinta-Light': values.light }
 const errors = []
 let allowed, root
 const walk = (dir) => {
