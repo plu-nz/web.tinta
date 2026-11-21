@@ -11,7 +11,7 @@ const rest = css.replace(rootMatch[0], '')
 const dark = { bg: 'background', 'bg-lighter': 'lighter_background' }
 const light = { bg: 'background', surface: 'lighter_background', line: 'surface0', muted: 'subtext1', text: 'text' }
 const expected = {}
-for (const k of ['surface0', 'surface1', 'surface2', 'overlay0', 'overlay1', 'overlay2', 'subtext0', 'subtext1', 'text', 'red', 'peach', 'green', 'blue']) {
+for (const k of ['surface0', 'surface1', 'surface2', 'overlay0', 'overlay1', 'overlay2', 'subtext0', 'subtext1', 'text', 'red', 'orange', 'green', 'blue']) {
   expected[`--c-${k}`] = values.dark[k]
 }
 for (const [t, k] of Object.entries(dark)) expected[`--c-${t}`] = values.dark[k]
