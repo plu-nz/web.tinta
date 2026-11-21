@@ -2,7 +2,7 @@
 
 Read [README.md](README.md) and the [PLUNZ shared context](https://github.com/plu-nz/.github/blob/main/CONTEXT.md) first.
 
-- **Responsibilities:** `src/palette.js` owns colours, names and groups; `src/index.jsx` renders the page and copy; `src/style.css` owns presentation.
+- **Responsibilities:** `src/palette.js` owns colours, names and groups; `src/index.jsx` renders the page and copy; `src/style.css` owns presentation. `scripts/check-palette.mjs` verifies the CSS uses only palette colours; keep the `:root` tokens in `style.css` in sync with `palette.js` and never write raw hex elsewhere.
 - **Colours:** the 14 accent colours stay exactly as published by Catppuccin. Backgrounds are PLUNZ values; text, overlays and surfaces are Catppuccin neutrals with the blue tint removed (Rec. 709 luminance, see `src/palette.js`). Order the accent colours by hue (Mauve after Lavender), not in Catppuccin documentation order. Light reuses the dark accent colours.
 - **Conventions:** English for source and docs; page copy in en/pt/es. Keep each language's names in sync.
 - **Commands:** `pnpm install --frozen-lockfile`, `pnpm dev`, `pnpm build`, `pnpm deploy`.
