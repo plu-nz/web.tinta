@@ -1,23 +1,15 @@
-// Colour keys follow the Omarchy colors.toml of the Darkppuccin theme; values are hex.
-export const keys=["accent", "selection", "muted", "background", "dark_background", "darker_background", "lighter_background", "foreground", "dark_foreground", "light_foreground", "bright_foreground", "red", "yellow", "orange", "green", "cyan", "blue", "magenta", "brown", "bright_red", "bright_yellow", "bright_green", "bright_cyan", "bright_blue", "bright_magenta"]
-export const names={"en": ["Accent", "Selection", "Muted", "Background", "Dark background", "Darker background", "Lighter background", "Foreground", "Dark foreground", "Light foreground", "Bright foreground", "Red", "Yellow", "Orange", "Green", "Cyan", "Blue", "Magenta", "Brown", "Bright red", "Bright yellow", "Bright green", "Bright cyan", "Bright blue", "Bright magenta"], "pt": ["Destaque", "Seleção", "Apagado", "Fundo", "Fundo escuro", "Fundo mais escuro", "Fundo mais claro", "Texto", "Texto escuro", "Texto claro", "Texto brilhante", "Vermelho", "Amarelo", "Laranja", "Verde", "Ciano", "Azul", "Magenta", "Marrom", "Vermelho vivo", "Amarelo vivo", "Verde vivo", "Ciano vivo", "Azul vivo", "Magenta vivo"], "es": ["Acento", "Selección", "Atenuado", "Fondo", "Fondo oscuro", "Fondo más oscuro", "Fondo más claro", "Texto", "Texto oscuro", "Texto claro", "Texto brillante", "Rojo", "Amarillo", "Naranja", "Verde", "Cian", "Azul", "Magenta", "Marrón", "Rojo vivo", "Amarillo vivo", "Verde vivo", "Cian vivo", "Azul vivo", "Magenta vivo"]}
-export const values={"dark": ["#F38BA8", "#393947", "#585B70", "#0F0F0F", "#0F0F0F", "#0F0F0F", "#1C1C1C", "#CDD6F4", "#6C7086", "#BAC2DE", "#CDD6F4", "#F38BA8", "#F9E2AF", "#F6B6AB", "#A6E3A1", "#94E2D5", "#89B4FA", "#F5C2E7", "#7B5B55", "#F38BA8", "#F9E2AF", "#A6E3A1", "#94E2D5", "#89B4FA", "#F5C2E7"], "light": ["#A64061", "#DFE2EB", "#6B7082", "#F7F7F9", "#ECECF1", "#E0E1E9", "#FFFFFF", "#25283B", "#25283B", "#555B70", "#161827", "#A64061", "#806019", "#A34E43", "#3D7548", "#236F69", "#315FA5", "#8F4F80", "#76544D", "#B3486B", "#8D6A1C", "#468350", "#287D76", "#396BB4", "#9D588E"]}
-
-// Display groups. A key marked in `base` is hidden when it equals that base colour.
-export const base = { dark_background: 'background', darker_background: 'background' }
-export const groups = [
-  { id: 'accent', title: { en: 'Accent', pt: 'Destaque', es: 'Acento' }, keys: ['accent'] },
-  { id: 'surfaces', title: { en: 'Surfaces', pt: 'Superfícies', es: 'Superficies' }, keys: ['background', 'dark_background', 'darker_background', 'lighter_background', 'selection', 'muted'] },
-  { id: 'text', title: { en: 'Text', pt: 'Texto', es: 'Texto' }, keys: ['foreground', 'light_foreground', 'dark_foreground', 'bright_foreground'] },
-  { id: 'colors', title: { en: 'Colors', pt: 'Cores', es: 'Colores' }, keys: ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'magenta', 'brown'] },
-]
+// Catppuccin Mocha (dark) and Latte (light), exact values, except the background colours,
+// which are PLUNZ's own adaptation (Darkppuccin for dark).
+export const names = {"rosewater": "Rosewater", "flamingo": "Flamingo", "pink": "Pink", "mauve": "Mauve", "red": "Red", "maroon": "Maroon", "peach": "Peach", "yellow": "Yellow", "green": "Green", "teal": "Teal", "sky": "Sky", "sapphire": "Sapphire", "blue": "Blue", "lavender": "Lavender", "text": "Text", "subtext1": "Subtext1", "subtext0": "Subtext0", "overlay2": "Overlay2", "overlay1": "Overlay1", "overlay0": "Overlay0", "surface2": "Surface2", "surface1": "Surface1", "surface0": "Surface0", "background": "Background", "lighter_background": "Lighter background"}
+export const values = {
+  dark: {"rosewater": "#F5E0DC", "flamingo": "#F2CDCD", "pink": "#F5C2E7", "mauve": "#CBA6F7", "red": "#F38BA8", "maroon": "#EBA0AC", "peach": "#FAB387", "yellow": "#F9E2AF", "green": "#A6E3A1", "teal": "#94E2D5", "sky": "#89DCEB", "sapphire": "#74C7EC", "blue": "#89B4FA", "lavender": "#B4BEFE", "text": "#CDD6F4", "subtext1": "#BAC2DE", "subtext0": "#A6ADC8", "overlay2": "#9399B2", "overlay1": "#7F849C", "overlay0": "#6C7086", "surface2": "#585B70", "surface1": "#45475A", "surface0": "#313244", "background": "#0F0F0F", "lighter_background": "#1C1C1C"},
+  light: {"rosewater": "#DC8A78", "flamingo": "#DD7878", "pink": "#EA76CB", "mauve": "#8839EF", "red": "#D20F39", "maroon": "#E64553", "peach": "#FE640B", "yellow": "#DF8E1D", "green": "#40A02B", "teal": "#179299", "sky": "#04A5E5", "sapphire": "#209FB5", "blue": "#1E66F5", "lavender": "#7287FD", "text": "#4C4F69", "subtext1": "#5C5F77", "subtext0": "#6C6F85", "overlay2": "#7C7F93", "overlay1": "#8C8FA1", "overlay0": "#9CA0B0", "surface2": "#ACB0BE", "surface1": "#BCC0CC", "surface0": "#CCD0DA", "background": "#F7F7F9", "lighter_background": "#FFFFFF"}
+}
+export const groups = [{"id": "colors", "title": {"en": "Colors", "pt": "Cores", "es": "Colores"}, "keys": ["rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender"]}, {"id": "text", "title": {"en": "Text", "pt": "Texto", "es": "Texto"}, "keys": ["text", "subtext1", "subtext0"]}, {"id": "overlays", "title": {"en": "Overlays", "pt": "Sobreposições", "es": "Superposiciones"}, "keys": ["overlay2", "overlay1", "overlay0"]}, {"id": "surfaces", "title": {"en": "Surfaces", "pt": "Superfícies", "es": "Superficies"}, "keys": ["surface2", "surface1", "surface0"]}, {"id": "background", "title": {"en": "Background", "pt": "Fundo", "es": "Fondo"}, "keys": ["background", "lighter_background"]}]
 export function visibleGroups(mode, locale) {
   return groups.map((g) => ({
     id: g.id,
     title: g.title[locale],
-    items: g.keys.map((k) => {
-      const i = keys.indexOf(k)
-      return { key: k, name: names[locale][i], hex: values[mode][i] }
-    }).filter((it) => !base[it.key] || it.hex !== values[mode][keys.indexOf(base[it.key])])
-  })).filter((g) => g.items.length)
+    items: g.keys.map((k) => ({ key: k, name: names[k], hex: values[mode][k] }))
+  }))
 }
