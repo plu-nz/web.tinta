@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/check-palette.mjs && vite build",
-    "check": "node scripts/check-palette.mjs && vite build",
+    "build": "node scripts/check-palette.mjs && node scripts/check-gtk.mjs && vite build",
+    "check": "node scripts/check-palette.mjs && node scripts/check-gtk.mjs && vite build",
     "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {

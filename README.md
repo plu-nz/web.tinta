@@ -10,4 +10,6 @@ Showcase site for Tinta, the PLUNZ colour palette, live at [tinta.plu.nz](https:
 
 Commands: `pnpm install`, `pnpm dev`, `pnpm build` (also validates the CSS colours against the palette), `pnpm deploy`.
 
+- **GTK theme:** [`themes/gtk`](themes/gtk/README.md) ships Tinta as a GTK 2/3/4 theme for the desktop.
+
 See [AGENTS.md](AGENTS.md) and the [src index](src/README.md).
