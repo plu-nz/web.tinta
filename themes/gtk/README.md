@@ -1,6 +1,6 @@
 # Tinta GTK themes
 
-Dark and light GTK 2, 3 and 4 themes in the Tinta palette, used by the PLUNZ desktop apps (Lounge, Stage, Nexus, Passport read its named colors) and by the Omarchy `tinta` theme in the Dotfiles repository.
+Dark and light GTK 2, 3 and 4 themes in the Tinta palette, used by the PLUNZ desktop apps (Lounge, Nexus, Passport read its named colors) and by the Omarchy `tinta` theme in the Dotfiles repository.
 
 - [`Tinta-Dark/`](Tinta-Dark): the dark theme. Copy or link it to `~/.themes/Tinta-Dark`, then select it with `gsettings set org.gnome.desktop.interface gtk-theme Tinta-Dark`.
 - [`Tinta-Light/`](Tinta-Light): the light variant (`gsettings set org.gnome.desktop.interface gtk-theme Tinta-Light`), generated from the dark theme by mapping each neutral to its Tinta light counterpart (`#0F0F0F`→`#F7F7F9`, `#1C1C1C`→`#FFFFFF`, text `#D7D7D7`→`#515151`, the gray ramp inverted) and inverting the neutral pixels of the GTK 2 assets. Accents are unchanged, as in the Tinta light palette.
